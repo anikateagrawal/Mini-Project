@@ -26,18 +26,21 @@ nav .nav{
     width: 500px;
     list-style: none;
 }
-.nav li{
+.nav a{
     margin: 0px 5px;
     padding: 15px;
     border-radius: 20px;
     transition: 1s;
-}
-.nav a{
     text-decoration: none;
     color: black;
+    display: inline-block;
+    font-weight: bolder;
 }
-.nav li:hover{
+.nav a:hover{
     background-color: lightgray;
+    color: blue;
+    text-decoration: underline;
+    transform: scale(1.2);
 }
 .f{
     display: flex;
@@ -60,6 +63,7 @@ nav .nav{
 .login:hover,.signin:hover{
     background-color: black;
     color: white;
+    border: none;
 }
 .home{
     width: 100%;
