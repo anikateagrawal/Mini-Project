@@ -55,6 +55,11 @@ nav .nav{
     margin: 0px 5px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 1s;
+}
+.login:hover,.signin:hover{
+    background-color: black;
+    color: white;
 }
 .home{
     width: 100%;
