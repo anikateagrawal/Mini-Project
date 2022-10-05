@@ -8,11 +8,15 @@
     <title>Web-App Store</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/App_Store.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="display1">
-        <header>
-            <div class="logo f">Logo</div>
+        <input type="checkbox" name="check" id="c">
+        <header id="nav1">
+            <div class="logo" style="display: flex; justify-content:space-between;"><img src="./images/App_Store.png" alt="logo" height="40px" width="40px">
+                <div style="text-align: right; font-size: 30px;" id="x"><label for="c"><i class="fa-solid fa-xmark"></i></label></div>
+            </div>
             <nav>
                 <ul class="nav f">
                     <a href="#home"><li  class="f">Home</li></a>
@@ -24,22 +28,76 @@
             </nav>
             <div class="user f">
                 <div class="login f">Login</div>
-                <div class="signin f">Sign-In</div>
+                <div class="signin f">Sign-In</div> 
+                
             </div>
         </header>
-        <div class="home f" id="home">
+        <header id="nav2">
+            <div class="logo f"><img src="./images/App_Store.png" alt="logo" height="40px" width="40px"></div>
+            <div class="user f">
+                <div class="login f">Login</div>
+                <div class="signin f">Sign-In</div>
+                <div class="m">
+                    <label for="c"><i class="fa-solid fa-bars"></i></label>
+                </div>  
+            </div>
+        </header>
+        <main class="home f" id="home">
             <div class="homet f">
                 <h1>
                     Explore the World's Best Web-App Store.
                 </h1>
-                <div class="btn f">
+                <a href="#platform"><div class="btn f">
                     Explore Now
-                </div>
+                </div></a>
             </div>
+            <div class="homei f">
+                <img src="./images/5-500x500.png" alt="">
+            </div>
+        </main>
+        <section class="platform" id="platform">
+            <h1 align="center" style="font-size: 50px;padding: 20px;">OUR <span style="color: green;">PLATFORM</span></h1>
+            <div class="f">
             <div class="homei f">
                 <img src="./images/appstore.jpg" alt="">
             </div>
+            <main>
+                <h2 style="font-size: 32px;">Designed In 2022</h2>
+                <p style="opacity: .7;">As a part of Mini Project by Students of GLA University : Divyanshi Varshney, Aastha Goyal and Anikate Agrawal</p>
+                <br>
+                <h2>It has various Features</h2>
+                <ul style="opacity: .7;">
+                    <li>Innovative User Interface</li>
+                    <li>Better Design</li>
+                    <li>Speed</li>
+                    <li>Ease of Use</li>
+                    <li>User Friendly</li>
+                </ul>
+                <br>
+                <h2>It showcases variety of things :</h2>
+                <ul style="opacity: .7;">
+                    <li>Trending Apps</li>
+                    <li>Useful Websites</li>
+                    <li>Games</li>
+                    <li>Movies</li>
+                    <li>Ebooks</li>
+                </ul>
+            </main>
         </div>
+        </section>
+        <section class="trend">
+            <h1 align="center" style="font-size: 50px;padding: 20px;"><span style="color: green;">TRENDING</span> WEB-APPS</h1>
+            <div class="apps">
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+                <div class="app"></div>
+            </div>
+        </section>
     </div>
 </body>
 
