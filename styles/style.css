@@ -78,8 +78,8 @@ a{
 }
 .home{
     width: 100%;    
-    /* background-color:rgba(8, 7, 7, 0.858); */
-    background-image:url('/images/iphone-appremove.jpg');
+    background-color:rgba(8, 7, 7, 0.858);
+    background-image:url("../images/iphone-appremove.jpg");
     background-size: cover;
     padding: 200px 20px;
 }
