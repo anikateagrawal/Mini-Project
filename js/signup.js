@@ -18,6 +18,7 @@ const auth = getAuth();
       alert("Email verification sent.Email might be in spam folder.Please verify email to sign in.");
         console.log("Email verification sent");
       });
+      login();
   })
   .catch((error) => {
     const errorCode = error.code;
