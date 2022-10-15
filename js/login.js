@@ -1,4 +1,4 @@
-import { getAuth, signInWithEmailAndPassword , sendEmailVerification} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword , sendEmailVerification,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
 
 const auth = getAuth();
 
@@ -31,4 +31,14 @@ const auth = getAuth();
     const errorMessage = error.message;
     alert(errorCode,errorMessage);
   });
+  }
+  document.getElementById("forgot").addEventListener("click",forgotPassword);
+  function forgotPassword(){
+    sendPasswordResetEmail(auth,prompt('Enter your email address')).then(()=>{
+      alert('password reset mail sent');
+      display1();
+    }).catch((error)=>{
+      alert(error.message);
+    })
+   
   }
