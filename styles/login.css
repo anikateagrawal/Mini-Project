@@ -48,7 +48,9 @@
     box-shadow: 0px 1px 2px black;
     text-transform: uppercase;
     margin-bottom: 10px;
+    cursor: pointer;
 }
-.display2 a,.display3 a{
-    color: initial;
+.display2 p,.display3 p{
+    text-decoration: underline;
+    cursor: pointer;
 }

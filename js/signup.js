@@ -6,8 +6,8 @@ const auth = getAuth();
   var b=document.getElementById("sign");
   b.addEventListener("click",signup);
   function signup(){
-    var e=document.getElementById("email").value;
-    var p=document.getElementById("pass").value;
+    var e=document.getElementById("email2").value;
+    var p=document.getElementById("pass2").value;
     createUserWithEmailAndPassword(auth, e, p)
   .then((userCredential) => {
     // Signed in 
@@ -24,3 +24,5 @@ const auth = getAuth();
     alert(errorCode,errorMessage);
   });
   }
+
+  
