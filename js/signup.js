@@ -4,8 +4,10 @@ const auth = getAuth();
 
 
   var b=document.getElementById("sign");
-  b.addEventListener("click",signup);
-  function signup(){
+  b.addEventListener("submit",signup);
+  
+  function signup(event){
+    event.preventDefault();
     var e=document.getElementById("email2").value;
     var p=document.getElementById("pass2").value;
     createUserWithEmailAndPassword(auth, e, p)
@@ -15,7 +17,6 @@ const auth = getAuth();
     sendEmailVerification(user).then(()=>{
       alert("Email verification sent.Email might be in spam folder.Please verify email to sign in.");
         console.log("Email verification sent");
-        window.location.href="./login.html";
       });
   })
   .catch((error) => {

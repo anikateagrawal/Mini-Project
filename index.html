@@ -116,28 +116,32 @@
         </section>
     </div>
     <div class="display2">
+        <form action="" method="post" id="log">
         <div class="login">
             <h1>Login</h1>
-            <label for="email">Email</label><input type="email" name="email" id="email">
-            <label for="pass">Password</label><input type="password" name="pass" id="pass">
+            <label for="email">Email</label><input type="email" name="email" id="email" required>
+            <label for="pass">Password</label><input type="password" name="pass" id="pass" required>
             <p id="forgot">Forgot Password?</p>
             <br>
-            <button id="log">Login</button>
+            <button  type="submit">Login</button>
             <p onclick="signin()">Need an account? SIGN UP</p><br>
             <p onclick="display1()">GO BACK TO HOME</p>
           </div>
+        </form>
           <script src="./js/firebase.js" type="module"></script>
           <script src="./js/login.js" type="module"></script>
     </div>
     <div class="display3">
+        <form action="" method="post" id="sign">
         <div class="login">
             <h1>Sign Up</h1>
-            <label for="email">Email</label><input type="email" name="email" id="email2">
-            <label for="pass">Password</label><input type="password" name="pass" id="pass2">
-            <button id="sign">Sign Up</button>
+            <label for="email">Email</label><input type="email" name="email2" id="email2" required>
+            <label for="pass">Password</label><input type="password" name="pass2" id="pass2" required>
+            <button type="submit" >Sign Up</button>
             <p onclick="login()">Already a user? LOGIN</p><br>
             <p onclick="display1()">GO BACK TO HOME</p>
           </div>
+        </form>
           <script src="./js/firebase.js" type="module"></script>
           <script src="./js/signup.js" type="module"></script>
     </div>

@@ -4,8 +4,10 @@ const auth = getAuth();
 
 
   var b=document.getElementById("log");
-  b.addEventListener("click",login);
-  function login(){
+  b.addEventListener("submit",login);
+
+  function login(event){
+    event.preventDefault();
     var e=document.getElementById("email").value;
     var p=document.getElementById("pass").value;
     signInWithEmailAndPassword(auth, e, p)
