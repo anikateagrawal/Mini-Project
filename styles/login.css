@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
     user-select: none;
 }
-body{
+.display2,.display3{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,6 +49,6 @@ body{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-a{
+.display2 a,.display3 a{
     color: initial;
 }

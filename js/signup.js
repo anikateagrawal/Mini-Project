@@ -1,9 +1,9 @@
-import { getAuth, createUserWithEmailAndPassword }  from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword ,sendEmailVerification}  from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
 
 const auth = getAuth();
 
 
-  var b=document.getElementById("log");
+  var b=document.getElementById("sign");
   b.addEventListener("click",signup);
   function signup(){
     var e=document.getElementById("email").value;
@@ -12,9 +12,11 @@ const auth = getAuth();
   .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert('Sign Up Successful');
-    console.log("successful");
-    // ...
+    sendEmailVerification(user).then(()=>{
+      alert("Email verification sent.Email might be in spam folder.Please verify email to sign in.");
+        console.log("Email verification sent");
+        window.location.href="./login.html";
+      });
   })
   .catch((error) => {
     const errorCode = error.code;
