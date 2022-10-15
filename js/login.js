@@ -36,7 +36,7 @@ const auth = getAuth();
   function forgotPassword(){
     sendPasswordResetEmail(auth,prompt('Enter your email address')).then(()=>{
       alert('password reset mail sent');
-      display1();
+      // display1();
     }).catch((error)=>{
       alert(error.message);
     })
