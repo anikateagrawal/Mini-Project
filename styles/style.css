@@ -7,7 +7,7 @@
     
 }
 .display1{
-    color: white;
+    /* color: white; */
 }
 header{
     width: 100%;
@@ -20,8 +20,10 @@ header{
     padding: 5px 50px;
     z-index: 10;
     background-color: black;
+    color: white;
 }
 #nav2{
+    color: white;
     display: none;
     z-index: 8;
 }
@@ -33,6 +35,7 @@ nav .nav{
     list-style: none;
 }
 .nav li{
+    color: white;
     margin: 0px 5px;
     padding: 15px;
     border-radius: 20px;
@@ -60,6 +63,7 @@ a{
     width: 250px;
 }
 .log,.signin{
+    color: white;
     width: 80px;
     height: 40px;
     border: 3px solid blue;
@@ -90,9 +94,10 @@ a{
     font-size: 50px;
 }
 .home{
+    color: white;
     width: 100%;    
     background-color:rgba(8, 7, 7, 0.858);
-    background-image:url("../images/iphone-appremove.jpg");
+    background-image:url("../images/pattern-background.jpg");
     background-size: cover;
     padding: 200px 20px;
 }
@@ -129,6 +134,7 @@ a{
 }
 
 .platform{
+    color: white;
     background-color: black;
     padding: 150px 50px;
 }
@@ -146,12 +152,27 @@ a{
 .app{
     margin: 20px 20px;
     width: 300px;
-    height: 400px;
+    height: 300px;
     border-radius: 20px;
-    box-shadow: 2px 2px 5px red;
+    box-shadow: 2px 2px 8px red;
     background-color: white;
+    overflow: hidden;
+    transition: 1s;
 }
-
+.app:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 8px lightgreen;
+}
+.apps img{
+    height: 100%;
+    width: 100%;
+}
+.appimg{
+    height: 70%;
+}
+.app h1,p{
+    padding: 5px;
+}
 .display2,.display3{
     display: none;
 }

@@ -1,8 +1,11 @@
 import { getAuth, signInWithEmailAndPassword , sendEmailVerification,sendPasswordResetEmail} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-auth.js";
 
 const auth = getAuth();
-
-
+var user;
+if(sessionStorage.getItem('user')!=null){
+  user=JSON.parse(sessionStorage.getItem('user'));
+  dp();
+}
   var b=document.getElementById("log");
   b.addEventListener("submit",login);
 
@@ -16,6 +19,8 @@ const auth = getAuth();
     const user = userCredential.user;
     if(user.emailVerified){
     console.log(user);
+    this.user=user;
+    sessionStorage.setItem('user',JSON.stringify(user));
     alert('Login Successful');
     display1();
     dp();
