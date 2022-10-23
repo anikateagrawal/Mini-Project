@@ -1,0 +1,80 @@
+.compliments{
+    /* height: 100vh; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+    display: grid;
+    grid-template-areas: "card1 card1 card2 card3"
+    "card4 card5 card5 card3";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    color: white;
+    background-color: rgb(218, 255, 255);
+}
+#reviews{
+    background-color: rgb(218, 255, 255);
+    padding: 100px;
+}
+#reviews h1{
+    padding: 20px;
+    color: green;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px lightcoral;
+}
+.compliments q,.compliments p{
+    opacity: 70%;
+}
+.compliments .card{
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px black;
+    padding: 20px;
+}
+.compliments .card1{
+    grid-area: card1;
+    background: purple;
+    /* background-image: url(./images/gray-quotation.png); */
+    /* background-repeat: no-repeat; */
+}
+.compliments .card2{
+    grid-area: card2;
+    background-color: green;
+}
+.compliments .card3{
+    grid-area: card3;
+    color: black;
+    background-color: white;
+}
+.compliments .card4{
+    grid-area: card4;
+    color: black;
+    background-color: white;
+}
+.compliments .card5{
+    grid-area: card5;
+    background-color: black;
+}
+.compliments header{
+    display: flex;
+}
+.compliments .i{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+.compliments .name{
+    padding: 10px;
+}
+@media screen and (max-width:800px){
+    .compliments{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "card1"
+        "card2" " card3" "card4" "card5";
+    }
+    #reviews{
+        padding: 40px;
+    }
+}

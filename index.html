@@ -7,74 +7,50 @@
     <title>Web-App Store</title>
     <link rel="stylesheet" href="./styles/login.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./images/App_Store.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    <link rel="shortcut icon" href="./images/App_Store.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/compliments.css">
+    <link rel="stylesheet" href="./styles/image-carousel.css">
   </head>
   <body>
     <div class="display1">
       <input type="checkbox" name="check" id="c" />
       <header id="nav1">
         <div class="logo" style="display: flex; justify-content: space-between">
-          <img
-            src="./images/App_Store.png"
-            alt="logo"
-            height="40px"
-            width="40px"
-          />
+          <img src="./images/App_Store.png" alt="logo"  height="40px" width="40px" />
           <div style="text-align: right; font-size: 30px" id="x">
             <label for="c"><i class="fa-solid fa-xmark"></i></label>
           </div>
         </div>
         <nav>
           <ul class="nav f">
-            <a href="#home"><li class="f">Home</li></a>
-            <a href="#apps"><li class="f">Apps</li></a>
-            <a href="#"><li class="f">Games</li></a>
-            <a href="#"><li class="f">E-Books</li></a>
-            <a href="#"><li class="f">Developers</li></a>
+            <a href="#home" onclick="checkbox()"><li class="f">Home</li></a>
+            <a href="#apps" onclick="checkbox()"><li class="f">Apps</li></a>
+            <a href="#games" onclick="checkbox()"><li class="f">Games</li></a>
+            <a href="#ebooks" onclick="checkbox()"><li class="f">E-Books</li></a>
+            <a href="#features" onclick="checkbox()"><li class="f">Features</li></a>
           </ul>
         </nav>
         <div class="user f">
           <div class="dp f">
             <i class="fa-solid fa-user"></i>
           </div>
-          <!-- <a href="./login.html"> -->
           <div class="log f">Login</div>
-          <!-- </a> -->
-          <!-- <a href="./signup.html"> -->
           <div class="signin f">Sign-In</div>
-          <!-- </a> -->
         </div>
       </header>
       <header id="nav2">
         <div class="logo f">
-          <img
-            src="./images/App_Store.png"
-            alt="logo"
-            height="40px"
-            width="40px"
-          />
+          <img src="./images/App_Store.png" alt="logo"  height="40px" width="40px" />
         </div>
         <div class="user f">
           <div class="dp f">
             <i class="fa-solid fa-user"></i>
           </div>
-          <!-- <a href="./login.html"> -->
           <div class="log f">Login</div>
-          <!-- </a> -->
-          <!-- <a href="./signup.html"> -->
           <div class="signin f">Sign-In</div>
-          <!-- </a> -->
           <div class="m">
             <label for="c"><i class="fa-solid fa-bars"></i></label>
           </div>
@@ -220,6 +196,89 @@
           </a>
         </div>
       </section>
+      <div class="carouseldiv" id="features">
+        <div class="ccap">Web Store Features</div>
+        <div class="cbox">
+            <button class="cbtn" id="cbtn1"><</button>
+                    <button class="cbtn" id="cbtn2">></button>
+                    <div class="carousel">
+                        <div class="image main" id="i0"><img class="i" src="./images/4149997_original.jpg" alt="Development">
+                            <p>Ease Of Web App Development And Display</p>
+                        </div>
+                        <div class="image " id="i1"><img class="i" src="./images/shutterstock_230651950-1280x720.jpg" alt="Use Anywhere">
+                            <p>Use Anywhere Anytime Without any restrictions</p>
+                        </div>
+                        <div class="image " id="i2"><img class="i" src="./images/smartphone-mobile-apps-data-privacy-1-adobe.jpeg" alt="Compatible">
+                            <p>Compatible with almost all devices.</p>
+                        </div>
+                        <div class="image " id="i3"><img class="i" src="./images/iphone-appremove.jpg" alt="Great UI">
+                            <p>Specially designed User Interface.</p>
+                        </div>
+                    </div>
+        </div>
+        <script src="./js/image-carousel.js"></script>
+    </div>
+    <section id="reviews">
+      <h1>Appreciation by some of the Users, Source Of Our Motivation.</h1>
+      <article class="compliments">
+        
+        <div class="card card1">
+            <header>
+                <img src="./images/Divyanshi.png" alt="Divyanshi" class="i">
+                <div class="name">
+                    <h2>Divyanshi Varshney</h2>
+                    <p>@divyanshi</p>
+                </div>
+            </header>
+            <h3>Awesome and fabulous website.</h3>
+            <q> Loved the way it works. Very user Friendly and easy to use and interact with. The apps, games and e-books here come in handy everyday. It has been a great experience. </q>
+        </div>
+        <div class="card card2">
+            <header>
+                <img src="./images/Ishika.jpg" alt="Ishika" class="i">
+                <div class="name">
+                    <h2>Ishika Chaturvedi</h2>
+                    <p>@ishika</p>
+                </div>
+            </header>
+            <h3>Excellent website for browsing web apps.</h3>
+            <q> All day to day need apps available at a single place. Nice user interface. Keep up the good work. </q>
+        </div>
+        <div class="card card3">
+            <header>
+                <img src="./images/Aastha.png" alt="Aastha" class="i">
+                <div class="name">
+                    <h2>Aastha Goyal</h2>
+                    <p>@aastha</p>
+                </div>
+            </header>
+            <h3>A Brand New alternate to other app stores.</h3>
+            <q> Whether it is weather app or live clock or quiz app or to do list or calculator, all are just tooo goood. I love to use them daily. Anywhere i am now i can easily keep check of my daily task list with this great to do list. I can create my own quizes without any fees and let my friends fill those as dares. Loved it. </q>
+        </div>
+        <div class="card card4">
+            <header>
+                <img src="./images/Anikate.png" alt="Anikate" class="i">
+                <div class="name">
+                    <h2>Anikate Agrawal</h2>
+                    <p>@anikate</p>
+                </div>
+            </header>
+            <h3>Wherever you are our webapps are always there to help and support you.</h3>
+            <q> All for Free! No Charges ! No Fees ! </q>
+        </div>
+        <div class="card card5">
+            <header>
+                <img src="./images/random.jpg" alt="Random" class="i">
+                <div class="name">
+                    <h2>Anonymous user</h2>
+                    <p>@anonymous</p>
+                </div>
+            </header>
+            <h3>Great Experience using this website.</h3>
+            <q> I loved the unit converter, calculator and live clock. They are very useful to me. Credit to the developers. </q>
+        </div>
+    </article>
+  </section>
     </div>
     <div class="display2">
       <form action="" method="post" id="log">

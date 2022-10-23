@@ -1,0 +1,78 @@
+.carouseldiv{
+    height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+padding: 100px 0px;
+}
+
+.carouseldiv .ccap{
+    padding-top: 50px;
+    font-size: 50px;
+    color: red;
+    text-shadow: 2px 2px 5px black;
+    font-weight: bolder;
+}
+.carouseldiv .cbox{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+.carouseldiv #cbtn1{
+    position: absolute;
+    top:40%;
+    left: 50px;
+    
+}
+.carouseldiv #cbtn2{
+    position: absolute;
+    top:40%;
+    right: 50px;
+}
+.carouseldiv .cbtn{
+    font-size: xx-large;
+    width: 40px;
+    height: 40px;
+    border-color: aliceblue;
+    background-color: rgba(135, 123, 123, 0.8);
+    border-radius: 50%;
+    color: white;
+    z-index: 5;
+}
+.carouseldiv .cbtn:active{
+    background-color: white;
+    color: black;
+}
+.carouseldiv .carousel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.carouseldiv .image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+}
+.carouseldiv .i{
+    width: 100%;
+    height: 90%;
+    /* border: 10px solid black; */
+}
+.carouseldiv .image p{
+    font-size: x-large;
+    text-shadow: 1px 1px 3px;
+}
+.carouseldiv .main{
+    visibility: visible;
+}
+@media screen and (max-width:750px){
+    .carouseldiv{
+        height: 85vh;
+    }
+}

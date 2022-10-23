@@ -9,7 +9,7 @@
 .display1{
     /* color: white; */
 }
-header{
+#nav1,#nav2{
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -31,7 +31,7 @@ header{
     display: none;
 }
 
-nav .nav{
+#nav1 nav .nav{
     list-style: none;
 }
 .nav li{
@@ -176,6 +176,9 @@ a{
 .display2,.display3{
     display: none;
 }
+.nav a{
+    display: block;
+}
 @media screen and (max-width:900px){
     .homet h1{
         font-size: 50px;
@@ -194,7 +197,7 @@ a{
         display: block;
     }
     #nav1{
-        padding: 5px 10px;
+        padding: 5px 50px;
         position: fixed;
         right: -100%;
         transition: 2s;

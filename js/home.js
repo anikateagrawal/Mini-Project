@@ -28,3 +28,7 @@ function dp(){
     document.getElementsByClassName("dp")[1].style="display:flex";
 }
 
+function checkbox(){
+    let ch=document.getElementById("c");
+    ch.checked=false;
+}
