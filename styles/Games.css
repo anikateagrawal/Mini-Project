@@ -9,6 +9,17 @@ flex-wrap: wrap;
 justify-content:space-evenly;
 align-items: center;
 }
+.games{
+    padding: 20px;
+    background-color: aquamarine;
+}
+#games{
+    padding-top: 70px;
+    font-size: 40px;
+    color: brown;
+    display: flex;
+    justify-content: center;
+}
 .h1{
     margin: 15px 15px 0px;
     font-family: Arial, Helvetica, sans-serif;
