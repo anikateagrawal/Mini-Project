@@ -50,6 +50,10 @@ footer{
     outline: none;
     font-size: 15px;
 }
+footer i{
+    padding: 5px;
+    font-size: 30px;
+}
 @media screen and (max-width:900px) {
     .pr{
         display: block;
