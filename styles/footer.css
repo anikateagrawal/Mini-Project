@@ -1,0 +1,33 @@
+footer{
+    background-color: black;
+    color: white;
+}
+.dev{
+    padding: 20px;
+}
+.copy{
+    font-size: 20px;
+}
+.prof{
+    width: 250px;
+    flex-direction: column;
+}
+.pr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.fed{
+    padding: 20px;
+}
+@media screen and (max-width:900px) {
+    .pr{
+        display: block;
+    }
+}
