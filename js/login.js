@@ -49,3 +49,26 @@ if(sessionStorage.getItem('user')!=null){
     })
    
   }
+
+//stop user from using website if not logged in
+  var a=document.getElementsByTagName("a");
+  a=Array.from(a);
+  a.forEach(element => {
+   element.addEventListener('click',check); 
+  });
+
+  function check(e){
+    if(sessionStorage.getItem('user')==null){
+        alert('Please login to continue');
+        e.preventDefault();
+    }
+}
+
+//signout
+
+document.getElementById('signout').addEventListener('click',signout);
+document.getElementById('signout2').addEventListener('click',signout);
+function signout(){
+  sessionStorage.clear();
+  location.reload();
+}

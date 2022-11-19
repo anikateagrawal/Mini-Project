@@ -26,6 +26,7 @@ function dp(){
     document.getElementsByClassName("signin")[1].style="display:none";
     document.getElementsByClassName("dp")[0].style="display:flex";
     document.getElementsByClassName("dp")[1].style="display:flex";
+    
 }
 
 function checkbox(){
