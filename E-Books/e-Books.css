@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:green;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.heading{
+    text-align: center;
+    color:#fff;
+    text-transform: uppercase;
+    /* padding-bottom: 3.5rem; */
+    font-size: 4rem;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.title{
+    color: white;
+    font-size: 3rem;
+    padding: 3.5rem 0rem 2rem 0rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.3rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+.book .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+    /* display: flex; */
+}
+
+.book .box-container .box{
+    border:var(--border);    
+}
+
+.book .box-container .box .image{
+    overflow:hidden;
+    /* width: 100%; */
+}
+
+.book .box-container .box .image img{
+    /* height: 100%; */
+    object-fit: cover;
+    width: 100%;
+}
+
+.book .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.book .box-container .box .content{
+    padding:2rem;
+}
+
+.book .box-container .box .content .title{
+    font-size: 2.1rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.book .box-container .box .content .title:hover{
+    color:var(--main-color);
+}
+
+.book .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    font-size: 1.5rem;
+}
+
+.book .box-container .box .content p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color:#ccc;
+}
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}
