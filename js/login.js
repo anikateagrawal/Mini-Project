@@ -63,3 +63,12 @@ if(sessionStorage.getItem('user')!=null){
         e.preventDefault();
     }
 }
+
+//signout
+
+document.getElementById('signout').addEventListener('click',signout);
+document.getElementById('signout2').addEventListener('click',signout);
+function signout(){
+  sessionStorage.clear();
+  location.reload();
+}

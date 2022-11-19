@@ -73,12 +73,30 @@ a{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: none;
     margin: 0px 15px;
     cursor: pointer;
     font-size: 22px;
 }
+.dd{
+    position: relative;
+    display: inline-block;
+}
+.ddc{
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.dd:hover .ddc{
+    display: block;
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(221, 218, 218);
+    color: black;
+    cursor: pointer;
+}
+
 .log:hover,.signin:hover{
     background-color: blue;
     color: white;
