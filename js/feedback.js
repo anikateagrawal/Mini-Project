@@ -17,6 +17,7 @@ function input(event) {
     user = JSON.parse(sessionStorage.getItem("user"));
   }
   else{
+    this.reset();
     alert("Please Login to continue");
     return;
   }
