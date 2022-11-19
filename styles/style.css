@@ -6,9 +6,6 @@
     user-select: none;
     
 }
-.display1{
-    /* color: white; */
-}
 #nav1,#nav2{
     width: 100%;
     display: flex;
