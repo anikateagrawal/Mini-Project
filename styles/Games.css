@@ -11,17 +11,11 @@ align-items: center;
 }
 .games{
     padding: 20px;
-    background-color: aquamarine;
-}
-#games{
-    padding: 70px 0px;
-    font-size: 40px;
-    color: brown;
-    display: flex;
-    justify-content: center;
+    background-color: rgba(22, 18, 18, 0.732);
 }
 .h1{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 .game{
     margin: 30px;
@@ -29,13 +23,16 @@ align-items: center;
     width: 350px;
     border: .5px black solid;
     border-radius: 18px;
-    background-color:rgb(247, 234, 210);
+    background-color:white;
     overflow: hidden;
     transition: width 1s;
     cursor: pointer;
+    box-shadow: 2px 3px 10px black;
+    transition: 1s;
 }
 .game:hover{
-    width: 360px;
+    transform: scale(1.1);
+    box-shadow: 2px 3px 10px green;
 }
 a{
     text-decoration: none;
@@ -68,8 +65,9 @@ a{
     height: 100%;
 }
 .sec2{
-    color:peru;
+    color:black;
     margin: 5px;
+    font-weight: bolder;
     padding-left: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
