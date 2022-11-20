@@ -27,6 +27,8 @@ function dp(){
     document.getElementsByClassName("dp")[0].style="display:flex";
     document.getElementsByClassName("dp")[1].style="display:flex";
     
+    document.getElementsByClassName('user')[0].style.width="50px";
+    document.getElementsByClassName('user')[1].style.width="100px";
 }
 
 function checkbox(){
