@@ -22,23 +22,17 @@
 .book{
     overflow-x: hidden;
     scroll-padding-top: -2rem;
-    scroll-behavior: smooth;
-}
-
-.book{
+    scroll-behavior: smooth;    
     background: var(--bg);
-}
-
-.book{
-    padding:4rem;
+    padding:3rem;
 }
 
 .heading{
     text-align: center;
     color:#fff;
     text-transform: uppercase;
-    /* padding-bottom: 3.5rem; */
-    font-size: 4rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
 }
 
 .heading span{
@@ -48,8 +42,8 @@
 
 .title{
     color: white;
-    font-size: 3rem;
-    padding: 3.5rem 0rem 2rem 0rem;
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 0rem;
 }
 
 .bn{
@@ -98,7 +92,7 @@
 }
 
 .book .box-container .box .content{
-    height: 250px;
+    height: 190px;
     position: relative;
     padding:1.5rem;
 }
