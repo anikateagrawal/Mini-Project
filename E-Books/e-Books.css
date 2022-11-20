@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-:root{
+.book{
     --main-color:green;
     --black:#13131a;
     --bg:#010103;
     --border:.1rem solid rgba(255,255,255,.3);
+    
 }
 
-*{
+.book{
     font-family: 'Roboto', sans-serif;
-    margin:0; padding:0;
+    margin:0;
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
+    /* padding-top:200px; */
 }
 
-html{
-    font-size: 62.5%;
+.book{
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
+    scroll-padding-top: -2rem;
     scroll-behavior: smooth;
 }
 
-body{
+.book{
     background: var(--bg);
 }
 
-section{
-    padding:2rem 7%;
+.book{
+    padding:4rem;
 }
 
 .heading{
@@ -51,24 +52,27 @@ section{
     padding: 3.5rem 0rem 2rem 0rem;
 }
 
-.btn{
+.bn{
     margin-top: 1rem;
     display: inline-block;
-    padding:.9rem 3rem;
-    font-size: 1.3rem;
+    padding:.8rem 1rem;
+    font-size: 1rem;
     color:#fff;
     background: var(--main-color);
     cursor: pointer;
+    transition: 1s;
+    position: absolute;
+    bottom: 1.5rem;
 }
 
-.btn:hover{
+.bn:hover{
     letter-spacing: .2rem;
 }
 
 .book .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap:1rem;
     /* display: flex; */
 }
 
@@ -78,26 +82,30 @@ section{
 
 .book .box-container .box .image{
     overflow:hidden;
-    /* width: 100%; */
-}
-
-.book .box-container .box .image img{
-    /* height: 100%; */
-    object-fit: cover;
+    height: 300px;
     width: 100%;
 }
 
+.book .box-container .box .image img{
+    height: 100%;
+    /* object-fit: cover; */
+    width: 100%;
+    transition: 1s;
+}
+
 .book .box-container .box:hover .image img{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .book .box-container .box .content{
-    padding:2rem;
+    height: 250px;
+    position: relative;
+    padding:1.5rem;
 }
 
 .book .box-container .box .content .title{
-    font-size: 2.1rem;
-    line-height: 1.5;
+    font-size: 1.6rem;
+    /* line-height: 1; */
     color:#fff;
 }
 
@@ -108,32 +116,23 @@ section{
 .book .box-container .box .content span{
     color:var(--main-color);
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .book .box-container .box .content p{
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     color:#ccc;
 }
 @media (max-width:991px){
-
-    html{
-        font-size: 55%;
+    .heading{
+        padding:1.5rem 1rem;
+        font-size: 2rem;
     }
-
-    .header{
-        padding:1.5rem 2rem;
+    .title{
+        font-size: 2rem;
     }
-
-    section{
+    .book{
         padding:2rem;
     }
-
-}@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    }
-
 }
