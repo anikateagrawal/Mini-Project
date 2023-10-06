@@ -1,4 +1,4 @@
-import {  getDatabase,  ref, get,  set,  update,  remove,  child,} from "https://www.gstatic.com/firebasejs/9.8.4/firebase-database.js";
+import {  getDatabase,  ref, get,  set,  update,  remove,  child,} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
 const db = getDatabase();
 // var Name=document.getElementById("name");
 // var email=document.getElementById("email");
